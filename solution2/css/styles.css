@@ -83,7 +83,7 @@ font-family: 'Ranchers', cursive;
 
 
 }
-@media(max-width:340px)
+/*@media(max-width:340px)
 {
 
 	#header-nav > div > div.navbar-header > div > a > h1
@@ -91,4 +91,40 @@ font-family: 'Ranchers', cursive;
 		font-size:18vw;
 	}
 }
+@media(max-width:300)
+{
+#header-nav > div > div.navbar-header > button
+{
+	width:100%;
 
+}
+
+}*/
+@media(max-width:340px){
+
+	.col-xxs-12{
+		margin-bottom:-10px;
+		margin-top:-10px;
+		width:100%;
+	}
+	#header-nav > div > div.navbar-header > div
+	{
+		margin-bottom:-20px;
+	}
+	#header-nav > div > div.navbar-header > button
+{
+	width:10vw;
+
+}
+	#header-nav > div > div.navbar-header > div > a > h1
+	{
+		font-size:18vw;
+	}
+	#header-nav > div > div.navbar-header{
+		height:100px;
+	}
+	#header-nav > div
+	{
+		height:50px;
+	}
+}
