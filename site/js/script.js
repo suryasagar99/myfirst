@@ -1,13 +1,43 @@
 
+console.log("afdfz");
+function submit(event){
 
-(function(window){var s1={};
+	console.log("hello");
+	var name=document.getElementById("name").value;
+	message="<h1>"+name+"</h1>";
+	document.getElementById("message").innerHTML=message;
+	if(name==='sagar')
+	{
 
-var name="sagar";
-s1.fun1=function(){
+		var title=document.querySelector("#title").innerHTML;
+		title+=message;
+		document.querySelector("#title").innerHTML=title;
+	}
+	
+}
 
-	console.log(name);
 
-};
-window.s1=s1;
+document.addEventListener("DOMContentLoaded",function(event){
 
-})(window);
+document.querySelector("button")
+.addEventListener("click",$gloajax.GetData());
+	/*function(){
+	$ajaxutils.sendGetRequest("name1.json",
+		function(res){
+			console.log("request"+res);
+			var name=res.name;
+			document.querySelector("#message")
+			.innerHTML=name;
+
+		});
+
+});*/
+
+function onClick(event){
+	this.textContent="U poked me!!"
+
+}
+	
+});
+
+
